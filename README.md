@@ -1,6 +1,6 @@
 # HSR Event Model Converter
 
-An unofficial converter for the event model viewer of HSR.
+An unofficial converter to convert the models shown in the HSR event website to gltf.
 
 ## Usage
 
