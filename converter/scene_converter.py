@@ -293,7 +293,9 @@ class SceneConverter:
 
     def parse_material(self, item) -> int:
         mat_id = len(self.gltf.materials)
-        mat = pygltflib.Material(name=item.get("id"))
+        mat = pygltflib.Material(
+            name=item.get("id"), doubleSided=True, alphaCutoff=None
+        )
         mat.pbrMetallicRoughness = pygltflib.PbrMetallicRoughness()
         self.gltf.materials.append(mat)
 
