@@ -296,7 +296,10 @@ class SceneConverter:
         mat = pygltflib.Material(
             name=item.get("id"), doubleSided=True, alphaCutoff=None
         )
-        mat.pbrMetallicRoughness = pygltflib.PbrMetallicRoughness()
+        mat.pbrMetallicRoughness = pygltflib.PbrMetallicRoughness(
+            metallicFactor=0,
+            roughnessFactor=1,
+        )
         self.gltf.materials.append(mat)
 
         for uniform in item.get("uniforms", []):
