@@ -32,6 +32,10 @@ def convert_avatar(work_dir: str, avatar: str):
             attr = prim.attributes
             attr.COLOR_0 = None
             attr.COLOR_1 = None
+    # remove weird white region on the eyes
+    for mesh in conv.gltf.meshes:
+        if mesh.name == "Face":
+            mesh.primitives.pop(1)
     conv.gltf.save(f"{avatar}.gltf")
 
 
