@@ -14,13 +14,17 @@ Then use `python convert.py` to convert your selection from the original model f
 
 ## Known Event Links
 
-- Update 1.1 - Galactic Roaming
+- Update 1.1 - Galactic Roaming (dead link)
   - [https://act.hoyoverse.com/sr/event/e20230313version-4j4a57/index.html](https://act.hoyoverse.com/sr/event/e20230313version-4j4a57/index.html)
+- Update 1.2 - Even Immortality Ends
+  - [https://act.hoyoverse.com/sr/event/e20230708version-8138dd/index.html](https://act.hoyoverse.com/sr/event/e20230708version-8138dd/index.html)
+
+## Archive
+
+Due to the old event links becoming dead the downloaded files will be archived on this repo.
 
 ## TODO
 
-- faceskin
 - lightmap and shadowmap
 - morphing
-- colors (or ensure that they aren't used)
 - fixing idle animation
